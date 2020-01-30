@@ -49,7 +49,7 @@ class Song
   def self.alphabetical
     binding.pry
     song_array = []
-    self.all.each {|s| s.name << song_array}.sort!
+    self.all.each {|s| s.name << song_array}
   end
   
 end
