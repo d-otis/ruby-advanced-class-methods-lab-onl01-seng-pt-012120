@@ -52,8 +52,8 @@ class Song
   def self.new_from_filename(filename)
     binding.pry
     new_song = self.new
-    self.artist_name = filename.split(Regexp.union(["-", "."]))[0].strip
-    @name = filename.split(Regexp.union(["-", "."]))[1].strip
+    new_song.artist_name = filename.split(Regexp.union(["-", "."]))[0].strip
+    new_song.name = filename.split(Regexp.union(["-", "."]))[1].strip
   end
   
 end
