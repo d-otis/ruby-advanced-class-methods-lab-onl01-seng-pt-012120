@@ -23,7 +23,7 @@ class Song
     # below returns Song instance that was initialized
     new_song = self.new
     @@all << new_song
-    binding.pry
+    # binding.pry
     new_song
   end
 end
