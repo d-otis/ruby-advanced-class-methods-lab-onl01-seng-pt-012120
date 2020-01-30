@@ -23,8 +23,8 @@ class Song
     # below returns Song instance that was initialized
     
     @@all << self.new
-    
-    
+    binding.pry
+    b
     self
   end
 end
