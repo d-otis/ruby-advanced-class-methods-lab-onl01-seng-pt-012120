@@ -10,7 +10,7 @@ class Song
 
   def save
     binding.pry
-    # self.class is the same as saying Song
+    # self.class aka Song
     self.class.all << self
   end
   
