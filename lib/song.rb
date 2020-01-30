@@ -50,6 +50,7 @@ class Song
     # binding.pry
     song_array = []
     self.all.each {|song| song_array << song.name}
+    binding.pry
     song_array.sort
   end
   
