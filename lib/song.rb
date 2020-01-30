@@ -51,7 +51,8 @@ class Song
   
   def self.new_from_filename(filename)
     binding.pry
-    filename.split(Regexp.union(["-", "."]))
+    @artist_name = filename.split(Regexp.union(["-", "."]))[0]
+    @name = filename.split(Regexp.union(["-", "."]))[1]
   end
   
 end
