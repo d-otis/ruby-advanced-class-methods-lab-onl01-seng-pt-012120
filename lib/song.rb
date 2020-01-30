@@ -49,9 +49,7 @@ class Song
   def self.alphabetical
     # binding.pry
     song_array = []
-    self.all.each do |song|
-      binding.pry
-    end
+    self.all.each {|song| song_array << song.name}
   end
   
 end
