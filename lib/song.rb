@@ -15,7 +15,7 @@ class Song
   def self.create
     # the following do not pass the tests
     # Attempt 1===========
-    # @@all << self.new 
+    @@all << self.new 
     # Attempt 2===========
     # self.class.all << self.new
     # Attempt 3===========
