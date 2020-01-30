@@ -20,5 +20,6 @@ class Song
     # self.class.all << self.new
     # Attempt 3===========
     # save
+    self
   end
 end
