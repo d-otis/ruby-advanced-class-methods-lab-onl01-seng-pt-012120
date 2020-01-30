@@ -24,7 +24,6 @@ class Song
     
     @@all << self.new
     binding.pry
-    b
     self
   end
 end
