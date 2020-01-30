@@ -9,20 +9,13 @@ class Song
   end
 
   def save
+    # self.class is the same as saying Song
     self.class.all << self
   end
   
   def self.create
-    # the following do not pass the tests
-    # Attempt 1===========
-    # @@all << self.new 
-    # Attempt 2===========
-    # self.class.all << self.new
-    # Attempt 3===========
-    # save
-    # below returns Song instance that was initialized
     new_song = self.new
-    @@all << new_song
+    self.all << new_song
     # binding.pry
     new_song
   end
