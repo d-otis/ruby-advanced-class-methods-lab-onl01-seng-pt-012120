@@ -47,10 +47,7 @@ class Song
   end
   
   def self.alphabetical
-    # binding.pry
-    song_array = []
-    self.all.each {|song| song_array << song.name}
-    song_array.sort!
+    self.all.sort_by {|song| }
   end
   
 end
