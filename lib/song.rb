@@ -21,9 +21,9 @@ class Song
     # Attempt 3===========
     # save
     # below returns Song instance that was initialized
-    
-    @@all << self.new
+    new_song = self.new
+    @@all << new_song
     binding.pry
-    self
+    new_song
   end
 end
