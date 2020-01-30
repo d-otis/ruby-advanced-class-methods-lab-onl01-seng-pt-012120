@@ -21,6 +21,10 @@ class Song
     # Attempt 3===========
     # save
     # below returns Song instance that was initialized
+    
+    @@all << self.new
+    
+    
     self
   end
 end
